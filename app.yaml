@@ -1,0 +1,54 @@
+application: global-lexicon-572
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+- url: /getvotes
+  script: polltracker.app
+- url: /message
+  script: polltracker.app
+- url: /getmyvote
+  script: polltracker.app
+- url: /static
+  static_dir: crucible-of-innovation/static
+- url: /images/intuit.gif
+  static_files: intuit.gif
+  upload: intuit.gif
+- url: /images/ninja.png
+  static_files: ninja.png
+  upload: ninja.png
+- url: /css/base.css
+  static_files: base.css
+  upload: base.css
+- url: /js/get_chart.js
+  static_files: get_chart.js
+  upload: get_chart.js
+- url: /js/gw.js
+  static_files: gw.js
+  upload: gw.js
+- url: /stat/normalise.css
+  static_files: normalise.css
+  upload: normalise.css
+- url: /stat/semantic/packaged/css/semantic.min.css
+  static_files: semantic.min.css
+  upload: semantic.min.css
+- url: /stat/semantic/packaged/javascript/semantic.min.js
+  static_files: semantic.min.js
+  upload: semantic.min.js
+- url: /stat/highcharts/js/highcharts.js
+  static_files: highcharts.js
+  upload: highcharts.js
+- url : /stat/jquery.scrollTo.js
+  static_files : jquery.scrollTo.js
+  upload : jquery.scrollTo.js
+libraries:
+- name: webapp2
+  version: "2.5.2"
+ 
+
+

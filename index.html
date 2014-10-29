@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>CTOF Gallery Walk</title>
+	<meta charset="utf-8"/>
+	<!-- Including the normalise css file -->
+	<link rel="stylesheet" href="../stat/normalise.css">
+	<!-- Including the semantic minified css files -->
+	<link rel="stylesheet" href="../stat/semantic/packaged/css/semantic.min.css">
+	<!-- Including the base css files -->
+	<link rel="stylesheet" href="../css/base.css">
+</head>
+	<body>
+
+	<div class="banner" id="banner">
+			<img src="../images/intuit.gif" alt="Intuit logo" id="intuit_logo">
+			<div class="ui header" id="ctof_heading">
+				<span>Innovation Challenge-2.0 Gallery Walk,2014</span>
+				<div id="voting_message_div">
+					<p>TO VOTE TYPE:</p>
+					
+					<p class="txtmsg">@icgw &lt;teamNumber&gt; <span>c1</span> &lt;your_corp_id&gt; for <em>Best Service Produced</em></p>
+					<p class="txtmsg">@icgw &lt;teamNumber&gt; <span>c2</span> &lt;your_corp_id&gt; for <em>Best use of Intuit Services</em></p>
+					<p class="txtmsg">@icgw &lt;teamNumber&gt; <span>c3</span> &lt;your_corp_id&gt; for <em>Innovate for India</em></p>
+					<p>AND SEND IT TO 51115</p>
+					
+				</div>
+			</div>			
+		</div> <!--/.banner -->
+
+
+
+		<!-- Creating a three column stackable ui grid -->
+		<div class="two column stackable ui grid">
+			<div class="row" id="charts_row">
+				<div class="three wide column" id="c1_column">
+					<div class="category_heading">
+						<span><span id="c1">c1</span> - Best Service Produced</span>
+							<br/><br/>
+					</div> <!-- /.category_heading -->
+					<div id="c1_container"></div><!--/#c1_container -->						
+				</div> <!--/#c1_column -->	
+			</div> <!--/#charts_row -->
+			
+			<div class="row">
+				<div class="three wide column" id="c2_column">
+					<div class="category_heading">
+						<span><span id="c2">c2</span> - Best use of Intuit Services</span>
+						<br/><br/>
+					</div><!--/.cateogry_heading -->
+					<div id="c2_container"></div><!--/#c2_container -->
+				</div> <!--/#c2_column  -->	
+			</div><!-- /.row -->	
+			
+			
+			<div class="row">
+				<div class="three wide column" id="c3_column">
+					<div class="category_heading">
+						<span><span id="c3">c3</span> - Innovate for India</span>
+						<br/><br/>
+					</div><!--/.cateogry_heading -->
+					<div id="c3_container"></div><!--/#c3_container -->
+				</div><!--/#c3_column -->
+			</div>
+		
+		</div> <!--/#wrapper -->
+
+	<!-- Inluding the jquery js file -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Including the semantic ui javascript files -->
+	<script src="../stat/semantic/packaged/javascript/semantic.min.js"></script>	
+	<!-- Including the highcharts js file -->
+	<script src="../stat/highcharts/js/highcharts.js"></script>
+	<!-- Adding the automatic scroll file -->
+	<script src="../stat/jquery.scrollTo.js"></script>
+	<!-- Inclding the getcharts file -->
+	<script src="../js/get_chart.js"></script>
+	<!-- Including the custom js file -->
+	<script src="../js/gw.js"></script>
+	</body>
+</html>
